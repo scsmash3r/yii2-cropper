@@ -72,7 +72,7 @@ class Cropper extends Widget
             // Modal button
             $buttonOptions = $this->options;
             unset($buttonOptions['id']);
-            $content .= Html::a('Crop <i class="glyphicon glyphicon-scissors"></i>', '#' . $this->id,
+            $content .= Html::a(round($this->aspectRatio, 1).'/1 <i class="glyphicon glyphicon-scissors"></i>', '#' . $this->id,
                 ArrayHelper::merge([
                     'data' => [
                         'toggle' => 'modal',

@@ -14,7 +14,7 @@ use yii\web\View;
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                         aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Select crop area and click "Crop" button</h4>
+                        <h6><i class="glyphicon glyphicon-resize-full"></i> AspectRatio: <?=$widget->aspectRatio;?>/1</h6>
             </div>
             <div class="modal-body">
                 <div class="crop-image-container">
@@ -22,8 +22,8 @@ use yii\web\View;
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary crop-submit">Crop</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-primary crop-submit">Обрезать</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
